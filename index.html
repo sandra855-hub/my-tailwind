@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tailwind Website</title>
+  <script>
+    function toggleDark () {
+      if (document.documentElement.classList.contains('dark')) {document.documentElement.classList.remove('dark');localStorage.theme = 'ligth';
+      } else {
+        document.documentElement.classList.add('dark'); localStorage.theme = 'dark'
+      }
+    }
